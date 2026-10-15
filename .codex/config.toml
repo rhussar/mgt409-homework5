@@ -1,0 +1,7 @@
+# Start Codex from the Homework 5 project root after activating .venv.
+[mcp_servers.campus-customs]
+command = "./.venv/bin/python"
+args = ["mcp_server/server.py"]
+startup_timeout_sec = 20
+tool_timeout_sec = 30
+disabled_tools = ["decide_approval", "reset_shop"]

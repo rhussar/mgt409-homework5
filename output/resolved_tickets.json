@@ -1,0 +1,160 @@
+{
+  "session_id": "a885a6a5-7757-45c6-9809-e328f7b014ca",
+  "complete": true,
+  "starting_checking": 3400.0,
+  "ending_checking": 160.0,
+  "cash_reconciles": true,
+  "tickets": [
+    {
+      "id": 101,
+      "status": "resolved",
+      "outcome": "Invoice 501 for the rush reprint is paid, so do not pay again. Desk handling is complete with fulfillment pending: no CC-TEE-WHITE size S is currently in stock. Customer draft saved unsent; vendor lead time is listed as five days, but any arrival timing is conditional, not confirmed. Await actual receipt of the tee before fulfilling the one-unit order.",
+      "agent_contributions": {
+        "accounting": [
+          "Prepared invoice 501 payment request for $840; human approval is pending. No payment was made and checking cash remains $3,400. Ticket 101 remains open.",
+          "Ticket 101 references invoice 501, which is recorded as paid."
+        ],
+        "boss": [
+          "Ticket 101 is waiting for human approval of the prepared invoice payment. No payment has been made, and the ticket remains open.",
+          "Ticket 101 desk handling is resolved; the one-unit order remains physically unfulfilled pending receipt of the size-S tee."
+        ],
+        "inventory": [
+          "Ticket 101 requests one CC-TEE-WHITE in size S. Inventory is zero. The linked reprint invoice is paid; the relevant vendor has a recorded five-day lead time."
+        ],
+        "customer_service": [
+          "Saved an unsent customer draft for Tauhid Zaman explaining the paid rush-reprint invoice, zero size-S stock, and five-day lead time as a conditional estimate only."
+        ]
+      },
+      "human_approvals": [
+        {
+          "id": "b383dc2d-7907-4f79-86be-8223cae84a89",
+          "ticket_id": 101,
+          "kind": "invoice",
+          "ref_id": 501,
+          "amount": 840.0,
+          "description": "Pay open, overdue $840 invoice for rush reprint of the ordered CC-TEE-WHITE size S; checking cash is $3,400.",
+          "details": "{\"vendor_id\": 1}",
+          "status": "approved",
+          "created_at": "2026-10-15T02:32:41.614296+00:00",
+          "decided_at": "2026-10-15T03:01:44.996646+00:00",
+          "approved_by": "Ronan (approved in chat)",
+          "payment_id": 2
+        }
+      ],
+      "drafts": [
+        {
+          "ticket_id": 101,
+          "recipient": "Tauhid Zaman",
+          "subject": "Update on your Bulldog tee",
+          "body": "Hi Tauhid Zaman,\n\nInvoice 501 for the rush reprint of your Bulldog tee is recorded as paid. We currently have zero size-S tees in stock, so we can\u2019t fulfill your order from available inventory right now. Bulldog Print Co\u2019s listed lead time is five days; this is only a conditional estimate, not a confirmed arrival or promise of delivery.\n\nWe\u2019ll update you when availability is confirmed.\n\nCampus Customs",
+          "updated_at": "2026-10-15T03:12:51.857478+00:00"
+        }
+      ],
+      "quotes": [],
+      "purchase_orders": [],
+      "cash_out": 840.0
+    },
+    {
+      "id": 102,
+      "status": "resolved",
+      "outcome": "Rent payment of $2,400 for lease 1 is recorded paid (payment_id 1); no duplicate payment is needed. The approved obligation was due 2026-09-02, and the lease next_due advanced to 2026-10-02. This one-calendar-month transition matches the rent rule and ticket_state timing (transition_matches=true); there is no due-date discrepancy. Business date is 2026-08-31; payment audit timestamps are not business dates. Operational handling is complete; landlord payment is recorded, with no further physical action indicated.",
+      "agent_contributions": {
+        "accounting": [
+          "Ticket 102 reviewed. Rent is due September 2, 2026; no payment request is pending. No payment was prepared.",
+          "Ticket 102 rent payment has not been prepared, as requested. Current checking balance is $3,400; the $2,400 rent is due 2026-09-02. After rent, $1,000 would remain, but a separate $840 invoice is already overdue, so paying both would leave $160. The visible ticket state shows no pending or approved payments.",
+          "Prepared the $2,400 rent payment request for ticket 102. The request is pending human approval; no payment was made.",
+          "Ticket 102\u2019s rent request is already approved and paid; no rent payment request remains to prepare. Current checking cash is $160, below the $2,400 monthly rent amount, but the payment is recorded as completed.",
+          "Ticket 102\u2019s rent payment is already recorded as paid; no new request was prepared.",
+          "Payment ID 1 is recorded as paid, so the persisted rent payment has completed; no duplicate payment was created. This verifies payment in the system, but the ticket remains open and checking is now below the recorded $2,400 rent amount.",
+          "Payment 1 is recorded as a paid rent payment for lease 1. MCP does not establish an exact post-payment next_due date: the lease record still lists 2026-10-02, while the payment record shows payment on 2026-10-15, and no updated due date or rescheduling rule is supplied."
+        ],
+        "facilities": [
+          "Ticket 102 reviewed. Lease rent of $2,400 for the Chapel Street shop is due September 2, 2026 (two days after the desk date). No rent payment is pending; no payment was prepared.",
+          "Ticket 102\u2019s persisted rent payment is approved and recorded as paid. No further facilities payment workflow was needed. The ticket remains open and the rent due-date records conflict, so the date discrepancy needs manager reconciliation.",
+          "Payment 1 is marked paid, but the post-payment lease due date cannot be reconciled to one exact date from the recorded evidence. The lease currently says 2026-10-02; the approved rent request cited 2026-09-02 as the rent due date. No writes were made."
+        ],
+        "boss": [
+          "Rent payment request for $2,400 is pending human approval. No payment was made, and ticket 102 remains open.",
+          "Ticket 102 was operationally resolved with the rent payment recorded as paid. The due-date discrepancy remains documented for manager reconciliation; no landlord contact or confirmation was made.",
+          "Reviewed and resolved ticket 102. The $2,400 rent payment is recorded paid; the apparent due-date discrepancy was not a conflict because the lease date advanced from 2026-09-02 to 2026-10-02 as specified by the rent timing rule."
+        ]
+      },
+      "human_approvals": [
+        {
+          "id": "9e9c8e4a-a105-4052-a258-a3f590ddffc6",
+          "ticket_id": 102,
+          "kind": "rent",
+          "ref_id": 1,
+          "amount": 2400.0,
+          "description": "Rent due 2026-09-02; lease 1, monthly rent $2,400.",
+          "details": "{\"due_date\": \"2026-09-02\", \"landlord\": \"Elm City Properties\"}",
+          "status": "approved",
+          "created_at": "2026-10-15T02:31:31.021487+00:00",
+          "decided_at": "2026-10-15T03:01:17.849771+00:00",
+          "approved_by": "Ronan (approved in chat)",
+          "payment_id": 1
+        }
+      ],
+      "drafts": [],
+      "quotes": [],
+      "purchase_orders": [],
+      "cash_out": 2400.0
+    },
+    {
+      "id": 103,
+      "status": "resolved",
+      "outcome": "Reviewed proposed manager-exception counteroffer: 8 currently available CC-HOOD-NAVY size M hoodies at $52 each, total $416 if accepted. Verified quote: list price $58, exact discount_percent 10.34%, unit cost $22, unit gross profit $30, gross_margin_percent 57.69%, total gross profit $240, and existing-stock cost basis $176 (not new cash outlay). Current stock is 8, so 12 of the requested 20 are unavailable. Do not buy additional stock; no purchase or payment was made. No recorded discount policy; this is a proposed manager exception only, not accepted by the customer. Fulfillment remains pending customer acceptance and subsequent fulfillment of up to 8 units.",
+      "agent_contributions": {
+        "inventory": [
+          "Inventory evidence for ticket 103: exact size M stock is 8 hoodies; the request is for 20, leaving a shortfall of 12."
+        ],
+        "accounting": [
+          "Evaluated ticket 103\u2019s proposed 8-unit counteroffer against hoodie pricing, stock, and current committed bills. No payment or purchase was prepared."
+        ],
+        "customer_service": [
+          "Saved a customer-facing draft to Yale AI Club; it has not been sent.",
+          "Updated ticket 103\u2019s unsent customer draft with the verified proposed offer and fulfillment limit."
+        ],
+        "boss": [
+          "Ticket 103 was operationally resolved with an unsent counteroffer draft for up to 8 navy medium hoodies at $52 each. Customer acceptance and physical fulfillment remain pending.",
+          "Reviewed and corrected ticket 103\u2019s saved decision and unsent customer draft, then recorded the reviewed outcome. The proposed manager-exception offer is for up to 8 currently available navy size M hoodies at $52 each ($416 total); customer acceptance and fulfillment are still pending."
+        ]
+      },
+      "human_approvals": [],
+      "drafts": [
+        {
+          "ticket_id": 103,
+          "recipient": "Yale AI Club",
+          "subject": "Bulk hoodie offer",
+          "body": "Hello Yale AI Club,\n\nWe can propose a manager-exception price of $52 per CC-HOOD-NAVY navy hoodie in size M for up to the 8 currently available. That would be $416 for 8 hoodies. The regular list price is $58 each, so the proposed price is an exact 10.34% discount.\n\nWe cannot fulfill all 20 requested from current stock; 12 of the 20 are unavailable. This is a proposed offer only; we have not assumed your acceptance. Please let us know if you would like to accept the offer for up to 8 available hoodies.\n\nBest,\nCampus Customs",
+          "updated_at": "2026-10-15T02:38:20.502286+00:00"
+        }
+      ],
+      "quotes": [
+        {
+          "ticket_id": 103,
+          "sku": "CC-HOOD-NAVY",
+          "size": "M",
+          "quantity": 8,
+          "unit_price": 52.0,
+          "list_price": 58.0,
+          "unit_cost": 22.0,
+          "discount_percent": 10.34,
+          "gross_margin_percent": 57.69,
+          "unit_gross_profit": 30.0,
+          "total_if_accepted": 416.0,
+          "existing_stock_cost_basis": 176.0,
+          "total_gross_profit": 240.0,
+          "available_qty": 8,
+          "unfilled_requested_qty": 12,
+          "stock_shortfall": 12,
+          "modeled_full_shortfall_purchase_cost": 264.0,
+          "cash_change_now": 0,
+          "note": "Proposed offer only. Existing stock cost basis is not a new payment; no revenue or stock reservation is recorded."
+        }
+      ],
+      "purchase_orders": [],
+      "cash_out": 0
+    }
+  ]
+}

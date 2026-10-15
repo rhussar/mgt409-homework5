@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-10-15T03:18:04.150488+00:00",
+  "complete": true,
+  "images": [
+    {
+      "ticket_id": 101,
+      "file": "output/screenshots/resolved_101.jpg",
+      "sha256": "0d7e3d431c13913fd257a0a4aa69cc5766f119dc352f08454306c8210427cb3f"
+    },
+    {
+      "ticket_id": 102,
+      "file": "output/screenshots/resolved_102.jpg",
+      "sha256": "727118d485b0597ac3780668914bb0ddf4c32068be1e833fffe0103bd06c7d25"
+    },
+    {
+      "ticket_id": 103,
+      "file": "output/screenshots/resolved_103.jpg",
+      "sha256": "a8a9fe526bb97094ed3e72bba36121ab37f9dd1c4de482536df40571ab1df1fd"
+    }
+  ]
+}

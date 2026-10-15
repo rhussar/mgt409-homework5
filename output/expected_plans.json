@@ -1,0 +1,58 @@
+{
+  "written_before_agent_runs": true,
+  "shop_date": "2026-08-31",
+  "plans": {
+    "101": {
+      "first": "Boss \u2192 Inventory: verify the exact size-S tee shortage and its linked invoice.",
+      "delegations": [
+        "Inventory \u2192 Accounting: check invoice 501 and vendor shipping block; prepare the $840 bill for human approval.",
+        "Boss \u2192 Customer Service after approval: draft an availability update using the vendor lead time. Boss records the decision and closes operational handling with stock still pending."
+      ],
+      "tools": [
+        "ticket_state",
+        "read_ticket",
+        "check_inventory",
+        "financial_snapshot",
+        "prepare_payment",
+        "save_customer_draft",
+        "save_decision",
+        "resolve_ticket"
+      ],
+      "facts": "Zero size-S tees. Invoice 501 is $840, due August 28, and blocks Bulldog Print Co. The shop date is August 31; vendor lead time is 5 days. Paying this existing reprint bill does not prove receipt of a tee or justify charging for the same reprint twice."
+    },
+    "102": {
+      "first": "Boss \u2192 Facilities: verify the lease, landlord, amount, and due date.",
+      "delegations": [
+        "Facilities \u2192 Accounting: check cash and prepare the $2,400 rent payment for human approval.",
+        "Facilities verifies the payment and next lease due date; Boss records the decision and closes the ticket."
+      ],
+      "tools": [
+        "ticket_state",
+        "read_ticket",
+        "financial_snapshot",
+        "prepare_payment",
+        "save_decision",
+        "resolve_ticket"
+      ],
+      "facts": "Chapel Street shop rent is $2,400 due September 2, two days after desk.date_today. Starting cash is $3,400. Rent and invoice 501 together leave $160. Pay the fixed obligations before considering discretionary purchases."
+    },
+    "103": {
+      "first": "Boss \u2192 Inventory: establish that 8 medium hoodies cannot fulfill a 20-unit request.",
+      "delegations": [
+        "Inventory \u2192 Accounting: evaluate the 12-unit shortfall, modeled restock cost, and a sustainable discount.",
+        "Boss chooses a proposed manager price exception; Customer Service saves a counteroffer that states the stock limit. Boss closes the desk task without claiming a completed sale."
+      ],
+      "tools": [
+        "ticket_state",
+        "check_inventory",
+        "financial_snapshot",
+        "save_decision",
+        "save_customer_draft",
+        "resolve_ticket"
+      ],
+      "facts": "8 medium hoodies are available; 12 are missing. At $22 unit cost the shortfall costs $264, exceeding the $160 left after bills by $104. List price is $58. A possible $50 offer would earn $28 unit gross profit and 56% gross margin, but this is a proposed manager exception, not a database policy or an accepted sale."
+    }
+  },
+  "written_at_utc": "2026-10-15T02:24:04.832896+00:00",
+  "timestamp_source": "Original plan file modification time, captured before any team runs."
+}

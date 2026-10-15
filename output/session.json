@@ -1,0 +1,57 @@
+{
+  "session_id": "a885a6a5-7757-45c6-9809-e328f7b014ca",
+  "starting_cash": 3400.0,
+  "runs": {
+    "102": {
+      "run_id": "e29c8833-d15e-4a73-9119-e5c7106d0bde",
+      "status": "resolved",
+      "report": {
+        "summary": "Reviewed and resolved ticket 102. The $2,400 rent payment is recorded paid; the apparent due-date discrepancy was not a conflict because the lease date advanced from 2026-09-02 to 2026-10-02 as specified by the rent timing rule.",
+        "status": "resolved",
+        "evidence": [
+          "ticket_state reports business date 2026-08-31.",
+          "Approved rent obligation due date is 2026-09-02; rent payment is recorded as payment_id 1 for $2,400.",
+          "Lease next_due is 2026-10-02, and timing.transition_matches is true.",
+          "Saved a corrected decision and resolve_ticket returned success (idempotent); no duplicate payment was prepared."
+        ],
+        "recommendations": [
+          "No further rent payment or physical action is indicated."
+        ]
+      }
+    },
+    "101": {
+      "run_id": "5420d3cd-b80e-4a70-91ee-f672a1c69bb0",
+      "status": "resolved",
+      "report": {
+        "summary": "Ticket 101 desk handling is resolved; the one-unit order remains physically unfulfilled pending receipt of the size-S tee.",
+        "status": "resolved",
+        "evidence": [
+          "Invoice 501 ($840 rush reprint) is recorded paid; no repeat payment was made.",
+          "Inventory check showed 0 CC-TEE-WHITE size S available.",
+          "Customer Service saved an unsent draft describing the shortage and the vendor\u2019s five-day lead time as conditional, not confirmed.",
+          "Saved the decision and resolved the ticket with fulfillment pending."
+        ],
+        "recommendations": [
+          "Await actual receipt of one size-S tee before fulfilling the order."
+        ]
+      }
+    },
+    "103": {
+      "run_id": "5c5daa7d-b86f-4069-9956-d609cbdda45c",
+      "status": "resolved",
+      "report": {
+        "summary": "Reviewed and corrected ticket 103\u2019s saved decision and unsent customer draft, then recorded the reviewed outcome. The proposed manager-exception offer is for up to 8 currently available navy size M hoodies at $52 each ($416 total); customer acceptance and fulfillment are still pending.",
+        "status": "resolved",
+        "evidence": [
+          "Quote verified $58 list price, exact 10.34% discount, $22 unit cost, 57.69% gross margin, $30 unit gross profit, and $240 total gross profit.",
+          "Inventory check confirms 8 available, leaving 12 of the requested 20 unfilled. Existing-stock cost basis is $176 and is not new cash outlay.",
+          "Decision and customer draft were saved with the exact quoted numbers and offer limits; draft does not assume acceptance.",
+          "resolve_ticket recorded the reviewed outcome; no purchase or payment was made."
+        ],
+        "recommendations": [
+          "Await the customer's response. If accepted, fulfillment still requires the subsequent physical handling of up to 8 units; the remaining 12 cannot be fulfilled from current stock."
+        ]
+      }
+    }
+  }
+}
